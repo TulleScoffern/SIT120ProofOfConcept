@@ -2,12 +2,20 @@
 
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page Title</title>
 </head>
 
 <style>
 body {
-  background-color: black;
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
 }
 
 h1 {color: white; text-align: center;}
@@ -16,54 +24,74 @@ p {color: white; text-align: center;}
 
 h2 {color: white; text-align: center;}
 
-table, th, td {
-  border: 1px solid;
-  color: green;
-  align: center;
+<style>
+.button {
+  background-color: #7cc1d6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
+.button1 {width: 250px;}
 
 </style>
 
 <body>
 
-<h1>Page Heading</h1>
-<p>This the text for the page.</p>
+<h1><b>Group-up</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Logout &nbsp;&nbsp;&nbsp;&nbsp; Username</h1>
 
-<h2>This is a Image<h2>
+<hr>
 
-<img src="Landscape_Background_12.jpg" alt="Fields" width="384" height="216">
-
-
-<h2>What is the Date?<h2>
-
-<button type="button"
-onclick="document.getElementById('date').innerHTML = Date()">
-Click Me</button>
-
-<p id="date"></p>
+<h2><b>News</b><h2>
+<p>This is place holder text for</p>
+<p>the webpage which would display</p>
+<p>current news about events</p>
+<p>and the product.</p>
 
 
-<button type="button"
-onclick="document.getElementById('Number').innerHTML = Math.floor(Math.random() * 10)">
-Click Me</button>
+<button class="button button1" onclick="alert('Opens Orginiser Page')">Host an Event</button>
 
-<h2 id="Number"</h2>
+<hr>
+
+<br>
+
+<h2><b>User Info</b><h2>
+
+First Name: <input type="text" name="firstname" value="" size="20"> 
+<br>
+Last Name: <input type="text" name="lastname" value="" size="20">
+
+<br><br><br><br>
+
+<b> Personal Profile: </b>
+<br>
+<input type="checkbox" name="requirments" value="red">18+ &emsp;
+<input type="checkbox" name="requirments" value="navy">Legal Driver &emsp;
+<input type="checkbox" name="requirments" value="black">Physicaly Fit
+<br><br>
+
+<button class="button button1" onclick="alert('Updates Users info')">Apply Chages</button>
+
+<hr>
+
+Search: <input type="text" name="SearchBar" value="" size="20"> 
+<br><br>
+<hr>
+<br>
+
+<img src="Activity place Holder.png" alt="ActivityPH1" width="200" height="200">
+<img src="Activity place Holder2.png" alt="ActivityPH2" width="200" height="200">
+<img src="Activity place Holder3.png" alt="ActivityPH3" width="200" height="200">
+<img src="Activity place Holder4.png" alt="ActivityPH4" width="200" height="200">
+<br>
 
 
-<table>
-  <tr>
-    <th>Name<th>
-    <th>Phone Number<th>
-  </tr>
-  <tr>
-    <th>Tulle<th>
-    <th>0432766657<th>
-  </tr>
-  <tr>
-    <th>Felicity<th>
-    <th>0413802275<th>
-  </tr>
-</table>
 
 
 </body>
